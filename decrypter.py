@@ -4,6 +4,9 @@ import pyaes
 def decrypter(dir):
     for item in os.listdir(dir):
         itempath = os.path.join(dir, item)
+        
+        if item == "decrypter.py" or item == "encrypter.py":
+            continue
 
         if os.path.isdir(itempath):
             decrypter(itempath)

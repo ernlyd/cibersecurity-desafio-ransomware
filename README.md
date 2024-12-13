@@ -1,11 +1,11 @@
-# Entendendo um Ransomware na Prática com Python
+# Entendendo um Ransomware na prática com Python
 
 ### Ferramentas
 
 - Kali Linux
 - Python
 
-### Resultados
+### Resultado
 
 ![evidencia_antes_execucao](https://github.com/user-attachments/assets/7a6bc275-ab3c-4db3-9da0-bee52477adaf)
 

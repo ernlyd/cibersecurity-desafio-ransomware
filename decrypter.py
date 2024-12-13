@@ -14,7 +14,7 @@ def decrypter(dir):
             with open(itempath, "rb") as file:
                 file_data = file.read()
 
-            key = b"desafioransomware"
+            key = b"desafioransomware"[:16]
             aes = pyaes.AESModeOfOperationCTR(key)
 
             decrypt_data = aes.decrypt(file_data)
